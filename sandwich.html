@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<h1>Sandwich Order</h1>
+
+<form action="sandwich.html" method="post">
+    
+<fieldset>
+    <h2>Your Info</h2>
+        <label for="name">Your Name</label><input type="text" id="name" name="customer_name"><br>
+        <label for="telephone">Telephone Number For The Order</label><input type="tel" id="telephone" name="customer_telephone"><br>
+        <label for="special_comments">Please type any additional comments here:</label><br>
+    <textarea id="special_comments" name="special_comments"></textarea>
+</fieldset>
+    
+<fieldset>
+<h2 for="bread">Choose Your Bread</h2>
+    <select id="bread">
+        <option value="wheat">Wheat</option>
+        <option value="white">White</option>
+        <option value="pumpernickle">Pumpernickle</option>
+        <option value="rye">Rye</option>
+        <option value="gluten_free">Gluten Free</option>
+        <option value="wrap">Wrap</option>
+    </select>
+    </fieldset>
+
+<fieldset>
+    <h2>Choose Your Cheese</h2>
+        <input type="radio" id="cheddar" value="cheddar" name="cheese_type"><label for="cheddar">Cheddar</label><br>
+        <input type="radio" id="swiss" value="swiss" name="cheese_type"><label for="swiss">Swiss</label><br>
+        <input type="radio" id="provalone" value="provalone" name="cheese_type"><label for="provalone">Provalone</label>
+</fieldset>
+
+<fieldset>
+    <h2>Choose Your Toppings</h2>
+        <input type="checkbox" id="lettuce" value="lettuce" name="toppings"><label for="lettuce">Lettuce</label><br>
+        <input type="checkbox" id="tomato" value="tomato" name="toppings"><label for="tomato">Tomato</label><br>
+        <input type="checkbox" id="mustard" value="mustard" name="toppings"><label for="mustard">Mustard</label><br>
+        <input type="checkbox" id="mayo" value="mayo" name="toppings"><label for="mayo">Mayonaise</label><br>
+        <input type="checkbox" id="onion" value="onion" name="toppings"><label for="onion">Red Onion</label>
+    </fieldset>
+    
+<button type="submit" id="submit_button">Order</button>
+</form>
+</html>
